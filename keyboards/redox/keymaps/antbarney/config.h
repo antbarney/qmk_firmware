@@ -26,9 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MASTER_RIGHT
 #define EE_HANDS
 
-#undef RGBLED_NUM
+#undef RGBLED_NUM /* ws2812 RGB LED */
+#define RGBLIGHT_SPLIT
+#define RGBLED_NUM 24
+#define RGBLED_SPLIT { 12, 12 }
 #define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 14
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
+#define RGBLIGHT_LIMIT_VAL 215
+#define RGBLIGHT_HUE_STEP 5
+#define RGBLIGHT_SAT_STEP 5
+#define RGBLIGHT_VAL_STEP 5
+#define RGBLIGHT_SLEEP
