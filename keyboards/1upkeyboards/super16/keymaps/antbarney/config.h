@@ -16,7 +16,10 @@
 
 #pragma once
 
-#undef RGBLED_NUM
-#define RGBLED_NUM 28                   // Keys + Underglow
-#define RGB_MATRIX_KEYRELEASES          // reacts to keyreleases
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 150 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
+#define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
+#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR  // Sets the default mode, if none has been set
+#define RGB_MATRIX_STARTUP_HUE 90  // Sets the default hue value, if none has been set
+#define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
+#define RGB_MATRIX_KEYRELEASES            // reacts to keyreleases
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS    //

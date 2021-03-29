@@ -16,12 +16,20 @@
 #include QMK_KEYBOARD_H
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT_ortho_4x4( /* Base */
-    RGB_TOG,    KC_1,    KC_U,    KC_P,
-    RGB_MOD,    KC_1,    KC_U,    KC_P,
-    RGB_TOG,    KC_1,    KC_U,    KC_P,
-    RGB_MOD,    KC_1,    KC_U,    KC_P
-  ),
+    [0] = LAYOUT_ortho_4x4(
+        KC_7, KC_8,   KC_9,   KC_ASTR,
+        KC_4, KC_5,   KC_6,   KC_SLSH,
+        KC_1, KC_2,   KC_3,   KC_MINS,
+        KC_0, KC_ENT, KC_DOT, MO(1)
+    ),
+
+    [1] = LAYOUT_ortho_4x4(
+        RGB_TOG, RGB_MOD,   RGB_SPI,   RGB_SPD,
+        RGB_HUD, RGB_HUI,   KC_TRNS,   KC_TRNS,
+        RGB_SAD, RGB_SAI,   KC_TRNS,   KC_TRNS,
+        RGB_VAD, RGB_VAI,   EEP_RST,   KC_TRNS
+    ),
+
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
