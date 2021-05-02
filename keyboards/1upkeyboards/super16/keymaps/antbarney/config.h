@@ -23,3 +23,6 @@
 #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
 #define RGB_MATRIX_KEYRELEASES            // reacts to keyreleases
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS    //
+
+// Audio
+#define AUDIO_PIN A5
