@@ -3,7 +3,7 @@
 #define MATRIX_IO_DELAY 40
 
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true // turn off effects when suspended
-#define RGB_DISABLE_TIMEOUT 30000           // number of milliseconds to wait until rgb automatically turns off
+// #define RGB_DISABLE_TIMEOUT 30000           // number of milliseconds to wait until rgb automatically turns off
 
 // Setup RGB Settings
 #define RGB_MATRIX_KEYRELEASES              // reacts to keyreleases (instead of keypresses)
